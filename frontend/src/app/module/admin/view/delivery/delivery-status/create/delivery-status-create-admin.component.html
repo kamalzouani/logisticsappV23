@@ -1,0 +1,50 @@
+        <p-dialog [(visible)]="createDialog" [style]="{width: '70vw'}" header="{{'deliveryStatus.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+            <ng-template pTemplate="content" >
+                        <p-tabView>
+                            <p-tabPanel header="{{'deliveryStatus.tabPan' | translate}}">
+                                <div class="grid">
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="1">{{'deliveryStatus.code' | translate}}<span style="color: red;">*</span></label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'deliveryStatus.code' | translate}}" id="1" [(ngModel)]="item.code"
+                                                            [ngClass]="{'ng-invalid ng-dirty' : !validDeliveryStatusCode}"  />
+                                                    <small class='p-error' *ngIf='!validDeliveryStatusCode'>Code is obligatory.</small>
+                                                </div>
+
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="2">{{'deliveryStatus.label' | translate}}<span style="color: red;">*</span></label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'deliveryStatus.label' | translate}}" id="2" [(ngModel)]="item.label"
+                                                            [ngClass]="{'ng-invalid ng-dirty' : !validDeliveryStatusLabel}"  />
+                                                    <small class='p-error' *ngIf='!validDeliveryStatusLabel'>Label is obligatory.</small>
+                                                </div>
+
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="3">{{'deliveryStatus.style' | translate}}<span style="color: red;">*</span></label>
+                                                    <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'deliveryStatus.style' | translate}}" id="3" [(ngModel)]="item.style"
+                                                            [ngClass]="{'ng-invalid ng-dirty' : !validDeliveryStatusStyle}"  />
+                                                    <small class='p-error' *ngIf='!validDeliveryStatusStyle'>Style is obligatory.</small>
+                                                </div>
+
+
+                                </div>
+                            </p-tabPanel>
+
+                        </p-tabView>
+
+            </ng-template>
+
+            <ng-template pTemplate="footer" >
+                <div class="p-flexbox">
+
+                            <button pButton pRipple  label="{{'validate' | translate}}"  icon="pi pi-check"  (click)="save()"></button>
+
+
+                            <button pButton pRipple  label="{{'cancel' | translate}}" icon="pi pi-times" class="p-button-outlined" (click)="hideCreateDialog()"></button>
+
+
+                </div>
+            </ng-template>
+
+    </p-dialog>

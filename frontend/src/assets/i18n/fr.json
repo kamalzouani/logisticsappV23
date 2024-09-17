@@ -1,0 +1,281 @@
+{
+    "from-to": "Elements from {first} to {last} (total {totalRecords})",
+    "new" : "Nouveau",
+    "search": "Chercher",
+    "export": "Exporter",
+    "import": "Importer",
+    "validate": "Validater",
+    "search": "Chercher...",
+    "delete": "Supprimer",
+    "cancel": "Annuler",
+    "save": "Sauvgarder",
+    "next": "Suivant",
+    "yes": "Oui",
+    "no": "Non",
+    "actions": "Actions",
+    "confirm": "Confirmer",
+    "creation": "Creation",
+    "list": "Liste",
+    "nom": "Nom",
+    "email": "Email",
+    "Données personnelles" : "Données personnelles",
+    "Username" : "Nom d'utilisateur",
+    "Télephone" : "Téléphone",
+    "Nouveau Mot de passe" : "Nouveau mot de passe",
+    "Confirmer votre Mot de passe" : "Confirmez votre mot de passe",
+    "Mot de passe" : "Mot de passe",
+    "prenom": "Prenom",
+    "Changer": "Changer",
+	
+	"actionPermission": {
+    "reference": "Référence",
+    "libelle": "Libellé",
+    "actionPermission": "Permission d'action",
+    "tabPan": "Permission d'action",
+    "header": "Liste des permissions d'action",
+    "deleteActionPermissionConfirmationMessage": "Êtes-vous sûr de vouloir supprimer la permission d'action",
+    "deleteActionPermissionsConfirmationMessage": "Êtes-vous sûr de vouloir supprimer les éléments sélectionnés"
+},
+
+"modelPermissionUser": {
+    "actionPermission": "Permission d'action",
+    "actionPermissionPlaceHolder": "Sélectionner une permission d'action",
+    "actionPermissionPlaceHolderFilter": "Rechercher par permission d'action",
+    "modelPermission": "Permission du modèle",
+    "modelPermissionPlaceHolder": "Sélectionner une permission de modèle",
+    "modelPermissionPlaceHolderFilter": "Rechercher par permission de modèle",
+    "value": "Valeur",
+    "user": "Utilisateur",
+    "userPlaceHolder": "Sélectionner un utilisateur",
+    "userPlaceHolderFilter": "Rechercher par utilisateur",
+    "subAttribute": "Sous-attribut",
+    "modelPermissionUser": "Permission du modèle de l'utilisateur",
+    "tabPan": "Permission du modèle de l'utilisateur",
+    "header": "Liste des permissions du modèle de l'utilisateur",
+    "deleteModelPermissionUserConfirmationMessage": "Êtes-vous sûr de vouloir supprimer la permission du modèle de l'utilisateur",
+    "deleteModelPermissionUsersConfirmationMessage": "Êtes-vous sûr de vouloir supprimer les éléments sélectionnés"
+},
+"role": {
+    "authority": "Autorité",
+    "role": "Rôle",
+    "tabPan": "Rôle",
+    "header": "Liste des rôles",
+    "deleteRoleConfirmationMessage": "Êtes-vous sûr de vouloir supprimer le rôle",
+    "deleteRolesConfirmationMessage": "Êtes-vous sûr de vouloir supprimer les éléments sélectionnés"
+},
+"roleUser": {
+    "role": "Rôle",
+    "rolePlaceHolder": "Sélectionner un rôle",
+    "rolePlaceHolderFilter": "Rechercher par rôle",
+    "user": "Utilisateur",
+    "userPlaceHolder": "Sélectionner un utilisateur",
+    "userPlaceHolderFilter": "Rechercher par utilisateur",
+    "roleUser": "Utilisateur de rôle",
+    "tabPan": "Utilisateur de rôle",
+    "header": "Liste des utilisateurs de rôle",
+    "deleteRoleUserConfirmationMessage": "Êtes-vous sûr de vouloir supprimer l'utilisateur de rôle",
+    "deleteRoleUsersConfirmationMessage": "Êtes-vous sûr de vouloir supprimer les éléments sélectionnés"
+},
+"user": {
+    "credentialsNonExpired": "Credentials non expirés",
+    "enabled": "Activé",
+    "email": "Email",
+    "accountNonExpired": "Compte non expiré",
+    "accountNonLocked": "Compte non verrouillé",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "passwordChanged": "Mot de passe changé",
+    "modelPermissionUsers": "Utilisateurs de permission du modèle",
+    "roleUsers": "Utilisateurs de rôle",
+    "RoleUsersPlaceHolder": "Sélectionner plusieurs rôles",
+    "user": "Utilisateur",
+    "tabPan": "Utilisateur",
+    "header": "Liste des utilisateurs",
+    "deleteUserConfirmationMessage": "Êtes-vous sûr de vouloir supprimer l'utilisateur",
+    "deleteUsersConfirmationMessage": "Êtes-vous sûr de vouloir supprimer les éléments sélectionnés"
+},
+"modelPermission": {
+    "reference": "Référence",
+    "libelle": "Libellé",
+    "modelPermission": "Permission du modèle",
+    "tabPan": "Permission du modèle",
+    "header": "Liste des permissions du modèle",
+    "deleteModelPermissionConfirmationMessage": "Êtes-vous sûr de vouloir supprimer la permission du modèle",
+    "deleteModelPermissionsConfirmationMessage": "Êtes-vous sûr de vouloir supprimer les éléments sélectionnés"
+},
+
+
+    "address":{
+        "street": "Street",
+        "number": "Number",
+        "city": "City",
+        "postalCode": "Postal code",
+        "country": "Country",
+        "address": "Address",
+        "tabPan": "Address",
+        "header": "Liste des address",
+        "deleteAddressConfirmationMessage": "Are you sure you want to delete address",
+        "deleteAddresssConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "city":{
+        "name": "Name",
+        "postalCode": "Postal code",
+        "city": "City",
+        "tabPan": "City",
+        "header": "Liste des citys",
+        "deleteCityConfirmationMessage": "Are you sure you want to delete city",
+        "deleteCitysConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "delivery":{
+        "address": "Address",
+        "addressPlaceHolder": "Select a Address",
+        "addressPlaceHolderFilter": "Search by Address",
+        "deliveryDate": "Delivery date",
+        "deliveryDateMin": "Delivery date Min",
+        "deliveryDateMax": "Delivery date Max",
+        "deliveryStatus": "Delivery status",
+        "deliveryStatusPlaceHolder": "Select a Delivery status",
+        "deliveryStatusPlaceHolderFilter": "Search by Delivery status",
+        "order": "Order",
+        "orderPlaceHolder": "Select a Order",
+        "orderPlaceHolderFilter": "Search by Order",
+        "delivery": "Delivery",
+        "tabPan": "Delivery",
+        "header": "Liste des deliverys",
+        "deleteDeliveryConfirmationMessage": "Are you sure you want to delete delivery",
+        "deleteDeliverysConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "deliveryStatus":{
+        "code": "Code",
+        "label": "Label",
+        "style": "Style",
+        "deliveryStatus": "Delivery status",
+        "tabPan": "Delivery status",
+        "header": "Liste des delivery status",
+        "deleteDeliveryStatusConfirmationMessage": "Are you sure you want to delete delivery status",
+        "deleteDeliveryStatussConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "order":{
+        "orderDate": "Order date",
+        "orderDateMin": "Order date Min",
+        "orderDateMax": "Order date Max",
+        "orderStatus": "Order status",
+        "orderStatusPlaceHolder": "Select a Order status",
+        "orderStatusPlaceHolderFilter": "Search by Order status",
+        "customer": "Customer",
+        "customerPlaceHolder": "Select a Customer",
+        "customerPlaceHolderFilter": "Search by Customer",
+        "orderItems": "Order items",
+        "order": "Order",
+        "tabPan": "Order",
+        "header": "Liste des orders",
+        "deleteOrderConfirmationMessage": "Are you sure you want to delete order",
+        "deleteOrdersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "orderStatus":{
+        "code": "Code",
+        "label": "Label",
+        "style": "Style",
+        "orderStatus": "Order status",
+        "tabPan": "Order status",
+        "header": "Liste des order status",
+        "deleteOrderStatusConfirmationMessage": "Are you sure you want to delete order status",
+        "deleteOrderStatussConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "product":{
+        "name": "Name",
+        "description": "Description",
+        "price": "Price",
+        "priceMin": "Price Min",
+        "priceMax": "Price Max",
+        "stock": "Stock",
+        "stockMin": "Stock Min",
+        "stockMax": "Stock Max",
+        "productCategory": "Product category",
+        "productCategoryPlaceHolder": "Select a Product category",
+        "productCategoryPlaceHolderFilter": "Search by Product category",
+        "product": "Product",
+        "tabPan": "Product",
+        "header": "Liste des products",
+        "deleteProductConfirmationMessage": "Are you sure you want to delete product",
+        "deleteProductsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "productCategory":{
+        "name": "Name",
+        "productCategory": "Product category",
+        "tabPan": "Product category",
+        "header": "Liste des product categorys",
+        "deleteProductCategoryConfirmationMessage": "Are you sure you want to delete product category",
+        "deleteProductCategorysConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "orderItem":{
+        "quantity": "Quantity",
+        "quantityMin": "Quantity Min",
+        "quantityMax": "Quantity Max",
+        "product": "Product",
+        "productPlaceHolder": "Select a Product",
+        "productPlaceHolderFilter": "Search by Product",
+        "order": "Order",
+        "orderPlaceHolder": "Select a Order",
+        "orderPlaceHolderFilter": "Search by Order",
+        "orderItem": "Order item",
+        "tabPan": "Order item",
+        "header": "Liste des order items",
+        "deleteOrderItemConfirmationMessage": "Are you sure you want to delete order item",
+        "deleteOrderItemsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "customer":{
+        "firstName": "First name",
+        "lastName": "Last name",
+        "phoneNumber": "Phone number",
+        "address": "Address",
+        "addressPlaceHolder": "Select a Address",
+        "addressPlaceHolderFilter": "Search by Address",
+        "credentialsNonExpired": "Credentials non expired",
+        "accountNonExpired": "Account non expired",
+        "username": "Username",
+        "passwordChanged": "Password changed",
+        "accountNonLocked": "Account non locked",
+        "password": "Password",
+        "email": "Email",
+        "enabled": "Enabled",
+        "customer": "Customer",
+        "tabPan": "Customer",
+        "header": "Liste des customers",
+        "deleteCustomerConfirmationMessage": "Are you sure you want to delete customer",
+        "deleteCustomersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "country":{
+        "name": "Name",
+        "code": "Code",
+        "country": "Country",
+        "tabPan": "Country",
+        "header": "Liste des countrys",
+        "deleteCountryConfirmationMessage": "Are you sure you want to delete country",
+        "deleteCountrysConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+"appName": "GED"
+}
+
+

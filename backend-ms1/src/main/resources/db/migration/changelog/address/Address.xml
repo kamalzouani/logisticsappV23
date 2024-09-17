@@ -1,0 +1,45 @@
+<!-- db/changelog-1.1-container.xml -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+  <!-- Create Container Table -->
+    <changeSet id="1" author="your-name">
+    <createTable tableName="address">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+        <column name="street" type="VARCHAR(500)"/>
+        <column name="number" type="VARCHAR(500)"/>
+        <column name="city" type="VARCHAR(500)"/>
+        <column name="postal_code" type="VARCHAR(500)"/>
+        <column name="country" type="VARCHAR(500)"/>
+
+
+    </createTable>
+  </changeSet>
+
+
+    <!-- Create Sequence for ContainerType -->
+  <changeSet id="2" author="your-name">
+    <createSequence sequenceName="address_seq" startValue="1" incrementBy="1"/>
+  </changeSet>
+
+  <!-- Load Data from CSV -->
+  <changeSet id="3" author="your-name">
+    <loadData
+            file="classpath:/db/migration/data/address/Address.csv"
+            tableName="address">
+      <column name="id" type="NUMERIC"/>
+          <column name="street" type="STRING"/>
+          <column name="number" type="STRING"/>
+          <column name="city" type="STRING"/>
+          <column name="postal_code" type="STRING"/>
+          <column name="country" type="STRING"/>
+    </loadData>
+  </changeSet>
+
+
+</databaseChangeLog>

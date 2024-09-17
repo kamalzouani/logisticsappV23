@@ -1,0 +1,896 @@
+openapi: 3.0.3
+info:
+  title: Title
+  description: Title
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+  /addresss:
+    get:
+      summary: List all addresss
+      operationId: listAddresss
+      tags:
+        - addresss
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of addresss
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Addresss'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a address
+      operationId: createAddresss
+      tags:
+        - addresss
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /addresss/{addressId}:
+    get:
+      summary: Info for a specific address
+      operationId: showAddressById
+      tags:
+        - addresss
+      parameters:
+        - name: addressId
+          in: path
+          required: true
+          description: The id of the address to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Addresss'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /citys:
+    get:
+      summary: List all citys
+      operationId: listCitys
+      tags:
+        - citys
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of citys
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Citys'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a city
+      operationId: createCitys
+      tags:
+        - citys
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /citys/{cityId}:
+    get:
+      summary: Info for a specific city
+      operationId: showCityById
+      tags:
+        - citys
+      parameters:
+        - name: cityId
+          in: path
+          required: true
+          description: The id of the city to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Citys'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /deliverys:
+    get:
+      summary: List all deliverys
+      operationId: listDeliverys
+      tags:
+        - deliverys
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of deliverys
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Deliverys'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a delivery
+      operationId: createDeliverys
+      tags:
+        - deliverys
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /deliverys/{deliveryId}:
+    get:
+      summary: Info for a specific delivery
+      operationId: showDeliveryById
+      tags:
+        - deliverys
+      parameters:
+        - name: deliveryId
+          in: path
+          required: true
+          description: The id of the delivery to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Deliverys'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /deliveryStatuss:
+    get:
+      summary: List all deliveryStatuss
+      operationId: listDeliveryStatuss
+      tags:
+        - deliveryStatuss
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of deliveryStatuss
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/DeliveryStatuss'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a deliveryStatus
+      operationId: createDeliveryStatuss
+      tags:
+        - deliveryStatuss
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /deliveryStatuss/{deliveryStatusId}:
+    get:
+      summary: Info for a specific deliveryStatus
+      operationId: showDeliveryStatusById
+      tags:
+        - deliveryStatuss
+      parameters:
+        - name: deliveryStatusId
+          in: path
+          required: true
+          description: The id of the deliveryStatus to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/DeliveryStatuss'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /orders:
+    get:
+      summary: List all orders
+      operationId: listOrders
+      tags:
+        - orders
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of orders
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Orders'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a order
+      operationId: createOrders
+      tags:
+        - orders
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /orders/{orderId}:
+    get:
+      summary: Info for a specific order
+      operationId: showOrderById
+      tags:
+        - orders
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          description: The id of the order to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Orders'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /orderStatuss:
+    get:
+      summary: List all orderStatuss
+      operationId: listOrderStatuss
+      tags:
+        - orderStatuss
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of orderStatuss
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/OrderStatuss'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a orderStatus
+      operationId: createOrderStatuss
+      tags:
+        - orderStatuss
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /orderStatuss/{orderStatusId}:
+    get:
+      summary: Info for a specific orderStatus
+      operationId: showOrderStatusById
+      tags:
+        - orderStatuss
+      parameters:
+        - name: orderStatusId
+          in: path
+          required: true
+          description: The id of the orderStatus to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/OrderStatuss'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /products:
+    get:
+      summary: List all products
+      operationId: listProducts
+      tags:
+        - products
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of products
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Products'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a product
+      operationId: createProducts
+      tags:
+        - products
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /products/{productId}:
+    get:
+      summary: Info for a specific product
+      operationId: showProductById
+      tags:
+        - products
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          description: The id of the product to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Products'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /productCategorys:
+    get:
+      summary: List all productCategorys
+      operationId: listProductCategorys
+      tags:
+        - productCategorys
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of productCategorys
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/ProductCategorys'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a productCategory
+      operationId: createProductCategorys
+      tags:
+        - productCategorys
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /productCategorys/{productCategoryId}:
+    get:
+      summary: Info for a specific productCategory
+      operationId: showProductCategoryById
+      tags:
+        - productCategorys
+      parameters:
+        - name: productCategoryId
+          in: path
+          required: true
+          description: The id of the productCategory to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/ProductCategorys'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /orderItems:
+    get:
+      summary: List all orderItems
+      operationId: listOrderItems
+      tags:
+        - orderItems
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of orderItems
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/OrderItems'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a orderItem
+      operationId: createOrderItems
+      tags:
+        - orderItems
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /orderItems/{orderItemId}:
+    get:
+      summary: Info for a specific orderItem
+      operationId: showOrderItemById
+      tags:
+        - orderItems
+      parameters:
+        - name: orderItemId
+          in: path
+          required: true
+          description: The id of the orderItem to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/OrderItems'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /customers:
+    get:
+      summary: List all customers
+      operationId: listCustomers
+      tags:
+        - customers
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of customers
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Customers'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a customer
+      operationId: createCustomers
+      tags:
+        - customers
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /customers/{customerId}:
+    get:
+      summary: Info for a specific customer
+      operationId: showCustomerById
+      tags:
+        - customers
+      parameters:
+        - name: customerId
+          in: path
+          required: true
+          description: The id of the customer to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Customers'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /countrys:
+    get:
+      summary: List all countrys
+      operationId: listCountrys
+      tags:
+        - countrys
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of countrys
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Countrys'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a country
+      operationId: createCountrys
+      tags:
+        - countrys
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /countrys/{countryId}:
+    get:
+      summary: Info for a specific country
+      operationId: showCountryById
+      tags:
+        - countrys
+      parameters:
+        - name: countryId
+          in: path
+          required: true
+          description: The id of the country to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Countrys'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  
+
+
+definitions:
+  Address:
+    type: "object"
+    required:
+      - id
+      - street
+      - number
+      - city
+      - postalCode
+      - country
+    properties:
+      id:
+        type: int
+      street:
+        type: string
+      number:
+        type: string
+      city:
+        type: string
+      postalCode:
+        type: string
+      country:
+        type: string
+  Addresss:
+    type: array
+    items:
+      $ref: '#/definitions/Address'
+  City:
+    type: "object"
+    required:
+      - id
+      - name
+      - postalCode
+    properties:
+      id:
+        type: int
+      name:
+        type: string
+      postalCode:
+        type: string
+  Citys:
+    type: array
+    items:
+      $ref: '#/definitions/City'
+  Delivery:
+    type: "object"
+    required:
+      - id
+      - deliveryDate
+    properties:
+      id:
+        type: int
+      deliveryDate:
+        type: date
+  Deliverys:
+    type: array
+    items:
+      $ref: '#/definitions/Delivery'
+  DeliveryStatus:
+    type: "object"
+    required:
+      - id
+      - code
+      - label
+      - style
+    properties:
+      id:
+        type: int
+      code:
+        type: string
+      label:
+        type: string
+      style:
+        type: string
+  DeliveryStatuss:
+    type: array
+    items:
+      $ref: '#/definitions/DeliveryStatus'
+  Order:
+    type: "object"
+    required:
+      - id
+      - orderDate
+    properties:
+      id:
+        type: int
+      orderDate:
+        type: date
+  Orders:
+    type: array
+    items:
+      $ref: '#/definitions/Order'
+  OrderStatus:
+    type: "object"
+    required:
+      - id
+      - code
+      - label
+      - style
+    properties:
+      id:
+        type: int
+      code:
+        type: string
+      label:
+        type: string
+      style:
+        type: string
+  OrderStatuss:
+    type: array
+    items:
+      $ref: '#/definitions/OrderStatus'
+  Product:
+    type: "object"
+    required:
+      - id
+      - name
+      - description
+      - price
+      - stock
+    properties:
+      id:
+        type: int
+      name:
+        type: string
+      description:
+        type: string
+      price:
+        type: number
+      stock:
+        type: int
+  Products:
+    type: array
+    items:
+      $ref: '#/definitions/Product'
+  ProductCategory:
+    type: "object"
+    required:
+      - id
+      - name
+    properties:
+      id:
+        type: int
+      name:
+        type: string
+  ProductCategorys:
+    type: array
+    items:
+      $ref: '#/definitions/ProductCategory'
+  OrderItem:
+    type: "object"
+    required:
+      - id
+      - quantity
+    properties:
+      id:
+        type: int
+      quantity:
+        type: int
+  OrderItems:
+    type: array
+    items:
+      $ref: '#/definitions/OrderItem'
+  Customer:
+    type: "object"
+    required:
+      - id
+      - firstName
+      - lastName
+      - phoneNumber
+      - credentialsNonExpired
+      - accountNonExpired
+      - username
+      - passwordChanged
+      - accountNonLocked
+      - password
+      - email
+      - enabled
+    properties:
+      id:
+        type: int
+      firstName:
+        type: string
+      lastName:
+        type: string
+      phoneNumber:
+        type: string
+      credentialsNonExpired:
+        type: boolean
+      accountNonExpired:
+        type: boolean
+      username:
+        type: string
+      passwordChanged:
+        type: boolean
+      accountNonLocked:
+        type: boolean
+      password:
+        type: string
+      email:
+        type: string
+      enabled:
+        type: boolean
+  Customers:
+    type: array
+    items:
+      $ref: '#/definitions/Customer'
+  Country:
+    type: "object"
+    required:
+      - id
+      - name
+      - code
+    properties:
+      id:
+        type: int
+      name:
+        type: string
+      code:
+        type: string
+  Countrys:
+    type: array
+    items:
+      $ref: '#/definitions/Country'
+
+  Error:
+    type: "object"
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

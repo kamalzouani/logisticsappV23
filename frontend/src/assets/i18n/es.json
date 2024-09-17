@@ -1,0 +1,279 @@
+{
+"from-to": "Elementos de {first} a {last} (total {totalRecords})",
+    "new": "Nuevo",
+    "search": "Buscar",
+    "export": "Exportar",
+    "import": "Importar",
+    "validate": "Validar",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "next": "Siguiente",
+    "yes": "Sí",
+    "no": "No",
+    "actions": "Acciones",
+    "confirm": "Confirmar",
+    "creation": "Creación",
+    "list": "Lista",
+    "nom": "Nombre",
+    "Données personnelles" : "Datos personales",
+    "Username" : "Nombre de usuario",
+    "Télephone" : "Teléfono",
+    "Nouveau Mot de passe" : "Nueva contraseña",
+    "Confirmer votre Mot de passe" : "Confirmar contraseña",
+    "Mot de passe" : "Contraseña",
+    "prenom":"Nombre de Pila",
+    "Changer": "Cambiar",
+	
+	"actionPermission": {
+    "reference": "Referencia",
+    "libelle": "Etiqueta",
+    "actionPermission": "Permiso de acción",
+    "tabPan": "Permiso de acción",
+    "header": "Lista de permisos de acción",
+    "deleteActionPermissionConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de acción",
+    "deleteActionPermissionsConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"modelPermissionUser": {
+    "actionPermission": "Permiso de acción",
+    "actionPermissionPlaceHolder": "Seleccionar un permiso de acción",
+    "actionPermissionPlaceHolderFilter": "Buscar por permiso de acción",
+    "modelPermission": "Permiso de modelo",
+    "modelPermissionPlaceHolder": "Seleccionar un permiso de modelo",
+    "modelPermissionPlaceHolderFilter": "Buscar por permiso de modelo",
+    "value": "Valor",
+    "user": "Usuario",
+    "userPlaceHolder": "Seleccionar un usuario",
+    "userPlaceHolderFilter": "Buscar por usuario",
+    "subAttribute": "Subatributo",
+    "modelPermissionUser": "Permiso de modelo de usuario",
+    "tabPan": "Permiso de modelo de usuario",
+    "header": "Lista de permisos de modelo de usuario",
+    "deleteModelPermissionUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de modelo de usuario",
+    "deleteModelPermissionUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"role": {
+    "authority": "Autoridad",
+    "role": "Rol",
+    "tabPan": "Rol",
+    "header": "Lista de roles",
+    "deleteRoleConfirmationMessage": "¿Estás seguro de que quieres eliminar el rol",
+    "deleteRolesConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"roleUser": {
+    "role": "Rol",
+    "rolePlaceHolder": "Seleccionar un rol",
+    "rolePlaceHolderFilter": "Buscar por rol",
+    "user": "Usuario",
+    "userPlaceHolder": "Seleccionar un usuario",
+    "userPlaceHolderFilter": "Buscar por usuario",
+    "roleUser": "Usuario de rol",
+    "tabPan": "Usuario de rol",
+    "header": "Lista de usuarios de rol",
+    "deleteRoleUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el usuario de rol",
+    "deleteRoleUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"user": {
+    "credentialsNonExpired": "Credenciales no expiradas",
+    "enabled": "Habilitado",
+    "email": "Correo electrónico",
+    "accountNonExpired": "Cuenta no expirada",
+    "accountNonLocked": "Cuenta no bloqueada",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "passwordChanged": "Contraseña cambiada",
+    "modelPermissionUsers": "Usuarios de permiso de modelo",
+    "roleUsers": "Usuarios de rol",
+    "RoleUsersPlaceHolder": "Seleccionar múltiples roles",
+    "user": "Usuario",
+    "tabPan": "Usuario",
+    "header": "Lista de usuarios",
+    "deleteUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el usuario",
+    "deleteUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"modelPermission": {
+    "reference": "Referencia",
+    "libelle": "Etiqueta",
+    "modelPermission": "Permiso de modelo",
+    "tabPan": "Permiso de modelo",
+    "header": "Lista de permisos de modelo",
+    "deleteModelPermissionConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de modelo",
+    "deleteModelPermissionsConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+
+
+
+    "address":{
+        "street": "Street",
+        "number": "Number",
+        "city": "City",
+        "postalCode": "Postal code",
+        "country": "Country",
+        "address": "Address",
+        "tabPan": "Address",
+        "header": "Liste des address",
+        "deleteAddressConfirmationMessage": "Are you sure you want to delete address",
+        "deleteAddresssConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "city":{
+        "name": "Name",
+        "postalCode": "Postal code",
+        "city": "City",
+        "tabPan": "City",
+        "header": "Liste des citys",
+        "deleteCityConfirmationMessage": "Are you sure you want to delete city",
+        "deleteCitysConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "delivery":{
+        "address": "Address",
+        "addressPlaceHolder": "Select a Address",
+        "addressPlaceHolderFilter": "Search by Address",
+        "deliveryDate": "Delivery date",
+        "deliveryDateMin": "Delivery date Min",
+        "deliveryDateMax": "Delivery date Max",
+        "deliveryStatus": "Delivery status",
+        "deliveryStatusPlaceHolder": "Select a Delivery status",
+        "deliveryStatusPlaceHolderFilter": "Search by Delivery status",
+        "order": "Order",
+        "orderPlaceHolder": "Select a Order",
+        "orderPlaceHolderFilter": "Search by Order",
+        "delivery": "Delivery",
+        "tabPan": "Delivery",
+        "header": "Liste des deliverys",
+        "deleteDeliveryConfirmationMessage": "Are you sure you want to delete delivery",
+        "deleteDeliverysConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "deliveryStatus":{
+        "code": "Code",
+        "label": "Label",
+        "style": "Style",
+        "deliveryStatus": "Delivery status",
+        "tabPan": "Delivery status",
+        "header": "Liste des delivery status",
+        "deleteDeliveryStatusConfirmationMessage": "Are you sure you want to delete delivery status",
+        "deleteDeliveryStatussConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "order":{
+        "orderDate": "Order date",
+        "orderDateMin": "Order date Min",
+        "orderDateMax": "Order date Max",
+        "orderStatus": "Order status",
+        "orderStatusPlaceHolder": "Select a Order status",
+        "orderStatusPlaceHolderFilter": "Search by Order status",
+        "customer": "Customer",
+        "customerPlaceHolder": "Select a Customer",
+        "customerPlaceHolderFilter": "Search by Customer",
+        "orderItems": "Order items",
+        "order": "Order",
+        "tabPan": "Order",
+        "header": "Liste des orders",
+        "deleteOrderConfirmationMessage": "Are you sure you want to delete order",
+        "deleteOrdersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "orderStatus":{
+        "code": "Code",
+        "label": "Label",
+        "style": "Style",
+        "orderStatus": "Order status",
+        "tabPan": "Order status",
+        "header": "Liste des order status",
+        "deleteOrderStatusConfirmationMessage": "Are you sure you want to delete order status",
+        "deleteOrderStatussConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "product":{
+        "name": "Name",
+        "description": "Description",
+        "price": "Price",
+        "priceMin": "Price Min",
+        "priceMax": "Price Max",
+        "stock": "Stock",
+        "stockMin": "Stock Min",
+        "stockMax": "Stock Max",
+        "productCategory": "Product category",
+        "productCategoryPlaceHolder": "Select a Product category",
+        "productCategoryPlaceHolderFilter": "Search by Product category",
+        "product": "Product",
+        "tabPan": "Product",
+        "header": "Liste des products",
+        "deleteProductConfirmationMessage": "Are you sure you want to delete product",
+        "deleteProductsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "productCategory":{
+        "name": "Name",
+        "productCategory": "Product category",
+        "tabPan": "Product category",
+        "header": "Liste des product categorys",
+        "deleteProductCategoryConfirmationMessage": "Are you sure you want to delete product category",
+        "deleteProductCategorysConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "orderItem":{
+        "quantity": "Quantity",
+        "quantityMin": "Quantity Min",
+        "quantityMax": "Quantity Max",
+        "product": "Product",
+        "productPlaceHolder": "Select a Product",
+        "productPlaceHolderFilter": "Search by Product",
+        "order": "Order",
+        "orderPlaceHolder": "Select a Order",
+        "orderPlaceHolderFilter": "Search by Order",
+        "orderItem": "Order item",
+        "tabPan": "Order item",
+        "header": "Liste des order items",
+        "deleteOrderItemConfirmationMessage": "Are you sure you want to delete order item",
+        "deleteOrderItemsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "customer":{
+        "firstName": "First name",
+        "lastName": "Last name",
+        "phoneNumber": "Phone number",
+        "address": "Address",
+        "addressPlaceHolder": "Select a Address",
+        "addressPlaceHolderFilter": "Search by Address",
+        "credentialsNonExpired": "Credentials non expired",
+        "accountNonExpired": "Account non expired",
+        "username": "Username",
+        "passwordChanged": "Password changed",
+        "accountNonLocked": "Account non locked",
+        "password": "Password",
+        "email": "Email",
+        "enabled": "Enabled",
+        "customer": "Customer",
+        "tabPan": "Customer",
+        "header": "Liste des customers",
+        "deleteCustomerConfirmationMessage": "Are you sure you want to delete customer",
+        "deleteCustomersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "country":{
+        "name": "Name",
+        "code": "Code",
+        "country": "Country",
+        "tabPan": "Country",
+        "header": "Liste des countrys",
+        "deleteCountryConfirmationMessage": "Are you sure you want to delete country",
+        "deleteCountrysConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+"appName": "GED"
+}
+
+

@@ -1,0 +1,58 @@
+    <p-dialog [(visible)]="editDialog" [style]="{width: '70vw'}" header="{{'delivery.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+        <ng-template pTemplate="content" >
+                <p-tabView>
+                    <p-tabPanel header="{{'delivery.tabPan' | translate}}">
+                        <div class="grid">
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="1">{{'delivery.address' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="addresss" [(ngModel)]="item.address" id="1" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="id" placeholder="{{'delivery.address' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="2">{{'delivery.deliveryDate' | translate}}</label>
+                                            <p-calendar appendTo="body" id="2"  [showTime]="true" [showSeconds]="false" placeholder="{{'delivery.deliveryDate' | translate}}"  [(ngModel)]="item.deliveryDate"
+                                                        dateFormat="{{dateFormat}}"  >
+                                            </p-calendar>
+                                            
+                                        </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="3">{{'delivery.deliveryStatus' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="deliveryStatuss" [(ngModel)]="item.deliveryStatus" id="3" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="label" placeholder="{{'delivery.deliveryStatus' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="4">{{'delivery.order' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="orders" [(ngModel)]="item.order" id="4" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="id" placeholder="{{'delivery.order' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                        </div>
+                    </p-tabPanel>
+
+                </p-tabView>
+
+        </ng-template>
+
+        <ng-template pTemplate="footer" >
+            <div class="p-flexbox">
+
+                    <button pButton pRipple  label="{{'validate' | translate}}"  icon="pi pi-check"  (click)="edit()"></button>
+
+
+                        <button pButton pRipple  label="{{'cancel' | translate}}" icon="pi pi-times" class="p-button-outlined" (click)="hideEditDialog()"></button>
+
+
+            </div>
+        </ng-template>
+
+    </p-dialog>
